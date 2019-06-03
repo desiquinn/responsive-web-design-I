@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5 {
   
   nav {
 	display: flex;
-	width: 880px;
+	width: 65%;
 	height: 100px;
 	margin: 0 auto;
 	position: relative;
@@ -105,13 +105,13 @@ h1, h2, h3, h4, h5 {
 	position: absolute;
 	right: 0;
   }
-  
+
   img {
 	margin-top: 25px;
   }
-  
+
   .website-wrapper {
-	width: 880px;
+	width: 65%;
 	margin: 0px auto 0 auto;
 	z-index: 1;
   }
@@ -154,6 +154,18 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	position: absolute;
 	right: 0;
+  }
+
+  @media(max-width: 800px) {
+    header img {
+        display: none;
+    }
+  }
+
+  @media(max-width: 500px) {
+    header img {
+        display: flex;
+    }
   }
   
   .section-one {
